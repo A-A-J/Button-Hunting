@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"/>
+    <style>
+      body{
+          background-color:#222;
+          font-family: 'Tajawal', sans-serif;
+      }
+
+      .text{
+          color:#888;
+          font-weight: bold;
+          font-size:18px;
+      }
+
+      .game{
+          margin-top:5rem;
+      }
+      .btn{
+          background-color:mediumslateblue;
+          padding:8px;
+          border:0;
+          border-radius:15px;
+          color:#fff;
+          position:absolute;
+      }
+    </style>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;500;700;800;900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+      
+    <div class="container pt-5 text-center">
+        <div class="text">اضغط على زر SEND وأربح كود تفعيل نيترو قيمنق 6 أشهر 😉</div>
+        <div class="game">
+
+          <button class="btn">SEND</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script>
+      let btn = document.querySelector('.btn');
+
+      btn.addEventListener('mouseover', event => {
+        btn.style.top = `${Math.floor(Math.random() * (400 - 50 + 1) + 50)}px`;
+
+        btn.style.right = `${Math.floor(Math.random() * (400 - 50 + 1) + 50)}px`;
+      });
+
+      btn.addEventListener('click', event => {
+        alert("أيمك حلو هههههه");
+      });
+    </script>
+  </body>
+</html>
