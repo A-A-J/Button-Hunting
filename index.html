@@ -44,27 +44,22 @@
       
     <div class="container pt-5 text-center">
         <div class="text">اضغط على زر SEND وأربح كود تفعيل نيترو قيمنق 6 أشهر 😉</div>
-        <div class="game">
-
-          <div class="btn">SEND</div>
-        </div>
+        <div class="game"><div class="btn" onmouseover="c">SEND</div></div>
     </div>
-
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
     <script>
-      let btn = document.querySelector('.btn');
+      function c(){
+        let btn = document.querySelector('.btn');
 
-      btn.addEventListener('mouseover', event => {
-        btn.style.left  = `${Math.floor(Math.random() * (9 - 2 + 1))}90px`;
-        btn.style.top   = `${Math.floor(Math.random() * (400 - 80 + 1) + 50)}px`;
+        btn.addEventListener('mouseover', event => {
+          btn.style.left  = `${Math.floor(Math.random() * (9 - 2 + 1))}90px`;
+          btn.style.top   = `${Math.floor(Math.random() * (400 - 80 + 1) + 50)}px`;
 
-      });
+        });
 
-      btn.addEventListener('click', event => {
-        alert("أيمك حلو هههههه ~ Discord:aaj#6898");
-      });
+        btn.addEventListener('click', event => {
+          alert("أيمك حلو هههههه ~ Discord:aaj#6898");
+        });
+      }
     </script>
   </body>
 </html>
