@@ -22,6 +22,7 @@
 
       .game{
           margin-top:4rem;
+          position: relative; /* Add this line */
       }
       .btn{
           background-color:mediumslateblue;
@@ -44,17 +45,14 @@
       
     <div class="container pt-5 text-center">
         <div class="text">اضغط على زر SEND وأربح كود تفعيل نيترو قيمنق 6 أشهر 😉</div>
-        <div class="game"><div class="btn" onmouseover="c()">SEND</div></div>
+        <div class="game"><div class="btn" onmouseover="moveButton()">SEND</div></div>
     </div>
     <script>
-      function c(){
+      function moveButton(){
         let btn = document.querySelector('.btn');
-
-        btn.addEventListener('mouseover', event => {
-          btn.style.left  = `${Math.floor(Math.random() * (9 - 2 + 1))}90px`;
-          btn.style.top   = `${Math.floor(Math.random() * (400 - 80 + 1) + 50)}px`;
-
-        });
+        
+        btn.style.left  = `${Math.floor(Math.random() * (9 - 2 + 1))}90px`;
+        btn.style.top   = `${Math.floor(Math.random() * (400 - 80 + 1) + 50)}px`;
 
         btn.addEventListener('click', event => {
           alert("أيمك حلو هههههه ~ Discord:aaj#6898");
